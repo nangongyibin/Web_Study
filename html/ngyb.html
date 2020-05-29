@@ -7,6 +7,13 @@
     <!-- base标签 -->
     <base target="_blank" />
     <title>南宫燚滨</title>
+    <script>
+        function check(){
+        if(form1.username.value ==""){
+            alert("hahah");
+        }
+        }
+    </script>
 </head>
 
 <body>
@@ -42,7 +49,9 @@
     <a href="#">暂定</a><br />
     <!-- 锚点定位 -->
     <a href="#life">3 个人生活 </a>
+    <center>
     <h3>早年经历</h3>
+    </center>
     <p>刘德华出生于香港新界，在家中排行老四，幼时随家人搬到了九龙钻石山的木屋区居住，并和姐弟一起帮助家里打理卖稀饭的生意 。1973年，刘德华随家人搬入香港蓝田邨第15座14楼 [23] 。刘德华从黄大仙天主教小学毕业后升读可立中学 [24] 。在可立中学读书期间，刘德华积极参加校内学校剧社的表演，在老师杜国威的指导下学习戏剧方面的知识。此外，他还参与包括编剧在内的幕后制作。刘德华在中五会考获得1B3D2E（中文读本A）的成绩。中六上学期后，他到香港电视广播有限公司的艺员训练班受训，从而开始了演艺之路</p>
     <h3>演艺经历</h3>
     <h5>港剧时代</h5>
@@ -198,13 +207,34 @@
     <!-- label标签 -->
     <label for="one">用户名：<input type="text">用户名：<input type="text" id="one"></label>
     <!-- 表单域 -->
-    <form action="demo.php" method="GET">
+    <form action="demo.php" method="GET" name="form1">
         用户名：<input type="text" name="username"><br /> 密码：
         <input type="text" name="password"><br />
-        <input type="submit" value="提交">
+        <input type="email">
+        <input type="url">
+        <input type="number">
+        <input type="range">
+        <input type="submit" value="提交" onclick="check()">
         <input type="reset" value="重置">
     </form>
 
-</body>
+    <section>
+        <p>haha</p>
+    </section>
 
+    <article>
+        <header>
+            <h1>123</h1>
+        </header>
+        <p>456</p>
+        <footer>
+            <p>789</p>
+        </footer>
+        <aside>
+            <p>
+                101112
+            </p>
+        </aside>
+    </article>
+</body>
 </html>
